@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.skrol-w::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #200f4c !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #11091a !important;
+}
+
+.z-200 {
+  z-index: 200 !important;
+}
+
+.ticket-img {
+  transition-duration: 0.3s;
+}
+
+.ticket-img:hover {
+  transform: scale(1.5) !important;
+  z-index: 50;
+}
+
+.z-100 {
+  z-index: 100 !important;
+}
+.bg-hero {
+  background: #11091a !important;
+}
+
+.bg-events {
+  /* background-color: #1f1b2e; */
+  /* background-color: #272333; */
+  background-color: #2d2a45;
+}
+
+.event-text {
+  /* color: rgb(23, 223, 23); */
+  color: #dcdcdc !important ;
+  letter-spacing: 1.2px !important;
+}
+
+.svg-hero {
+  background-color: #100919;
+  background-image: radial-gradient(
+    ellipse at 65% 25%,
+    #200f4c 5%,
+    #150b1e 40%,
+    #100919 80%
+  );
+}
+
+html {
+  scrollbar-width: 2px !important;
+  scroll-behavior: smooth;
+}
+
+.hero-gradient {
+  z-index: 0 !important;
+  background: linear-gradient(to right, #100919d9 33%, #150b1e30, #200f4c);
+}
+
+.svg-hero {
+  background-color: #100919;
+  background-image: radial-gradient(
+    ellipse at 65% 25%,
+    #200f4c 5%,
+    #150b1e 40%,
+    #100919 80%
+  );
+}
+
+.svg-events {
+  background-color: #100919;
+  background-image: radial-gradient(
+    ellipse at 25% 75%,
+    #200f4c 5%,
+    rgb(21, 11, 30) 40%,
+    #100919 80%
+  );
+}
+
+/* .svg-search-title{
+  background-color: #100919;
+  background-image: radial-gradient(
+    ellipse at -50% 100%,
+    #200f4c 5%,
+    rgb(21, 11, 30) 40%,
+    #100919 80%
+  );
+} */
+
+.heading_span-2 {
+  -webkit-text-fill-color: transparent;
+  background-image: radial-gradient(circle at 100% 100%, #a958fa, #8c21f8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: block;
+}
+
+.btn-color {
+  /* background-color: #8c20f8;
+   */
+  background-color: #5c6bc0;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn-color:hover {
+  background-color: #9428ff !important;
+}
+.btn-hover-color {
+  background-color: #9934ff;
+}
+
+.hero-h1 {
+  line-height: 1.2 !important;
+  letter-spacing: 1.4px !important;
+  font-family: "Raleway", sans-serif !important;
+}
+
+.my-fonts {
+  font-family: "Raleway", sans-serif !important;
+}
